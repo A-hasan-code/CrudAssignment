@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const corsOptions = {
-  origin: 'http://localhost:3000', // Change this to your frontend URL
+  origin:  process.env.FRONTEND_URL , // Change this to your frontend URL
   credentials: true
 };
 
